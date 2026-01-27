@@ -2,10 +2,10 @@
   --bg: #f6f6f6;
   --panel: #ffffff;
   --ink: #111111;
-  --muted: #575757;
-  --line: #e6e6e6;
+  --muted: #3f3f3f;
+  --line: #dedede;
   --soft: #fafafa;
-  --shadow: 0 10px 30px rgba(0,0,0,0.06);
+  --shadow: 0 12px 34px rgba(0,0,0,0.08);
   --radius: 14px;
   --radius-sm: 12px;
   --pad: 18px;
@@ -46,7 +46,7 @@ a{ color: inherit; }
   height: auto;
   padding: 12px 14px;
   background: var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: 10px;
   z-index: 999;
 }
@@ -108,25 +108,29 @@ a{ color: inherit; }
   min-height: 46px;
   padding: 12px 18px;
   border-radius: 12px;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
-  font-weight: 750;
+  border: 1px solid #0d0d0d;
+  background: #0d0d0d;
+  color: #ffffff;
+  font-weight: 780;
   text-decoration: none;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
   cursor: pointer;
 }
-.btn:hover{ transform: translateY(-1px); }
+.btn:hover{
+  transform: translateY(-1px);
+  background: #111111;
+}
 .btn:active{ transform: translateY(0px); }
-.btn:focus{ outline: 3px solid rgba(0,0,0,0.2); outline-offset: 2px; }
+.btn:focus{ outline: 3px solid rgba(0,0,0,0.25); outline-offset: 2px; }
+.btn:focus-visible{ outline: 3px solid #0d0d0d; outline-offset: 3px; }
 
 .btn-ghost{
   background: transparent;
   color: var(--ink);
-  border-color: #cfcfcf;
+  border-color: #0d0d0d;
   box-shadow: none;
 }
-.btn-ghost:hover{ background: rgba(0,0,0,0.04); }
+.btn-ghost:hover{ background: rgba(0,0,0,0.06); }
 
 .btn-small{
   min-height: 40px;
@@ -143,7 +147,7 @@ a{ color: inherit; }
 .pill{
   display: inline-block;
   padding: 10px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: 999px;
   background: rgba(255,255,255,0.7);
   color: var(--muted);
@@ -190,7 +194,7 @@ h1{
   gap: 10px;
   align-items: flex-start;
   padding: 10px 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: 12px;
   background: rgba(255,255,255,0.66);
 }
@@ -198,7 +202,7 @@ h1{
 
 .hero-card{
   background: var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: var(--radius);
   padding: var(--pad-lg);
   box-shadow: var(--shadow);
@@ -211,7 +215,7 @@ h1{
 
 .mini-card{
   background: var(--soft);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: var(--radius-sm);
   padding: 14px;
 }
@@ -243,7 +247,7 @@ h1{
 
 .card{
   background: var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: var(--radius);
   padding: var(--pad-lg);
   box-shadow: var(--shadow);
@@ -256,7 +260,7 @@ h1{
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-size: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   padding: 6px 10px;
   border-radius: 999px;
   background: var(--soft);
@@ -280,7 +284,7 @@ h1{
   gap: 14px;
   padding: 18px 18px;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6));
 }
 .callout-title{ font-weight: 850; margin-bottom: 3px; }
@@ -297,7 +301,7 @@ h1{
 /* Preview */
 .preview{
   background: var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: var(--radius);
   padding: var(--pad-lg);
   box-shadow: var(--shadow);
@@ -319,7 +323,7 @@ h1{
 }
 
 .listing{
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--soft);
@@ -354,7 +358,7 @@ input, select, textarea{
 textarea{ min-height: 110px; resize: vertical; }
 input:focus, select:focus, textarea:focus{ outline: 3px solid rgba(0,0,0,0.18); border-color: #c6c6c6; }
 
-fieldset{ border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px; }
+fieldset{ border: 1px solid #cfcfcf; border-radius: var(--radius-sm); padding: 14px; }
 legend{ font-weight: 850; padding: 0 6px; color: var(--muted); }
 
 .check{
@@ -375,7 +379,7 @@ legend{ font-weight: 850; padding: 0 6px; color: var(--muted); }
   display: inline-block;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   background: var(--soft);
   color: var(--muted);
   font-weight: 650;
@@ -386,7 +390,7 @@ legend{ font-weight: 850; padding: 0 6px; color: var(--muted); }
   display: none;
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #cfcfcf;
   background: rgba(0,0,0,0.04);
   color: var(--muted);
 }
@@ -425,9 +429,63 @@ legend{ font-weight: 850; padding: 0 6px; color: var(--muted); }
   .listing-grid{ grid-template-columns: 1fr; }
 }
 @media (max-width: 720px){
+  body{ padding-bottom: 86px; }
   .grid-2{ grid-template-columns: 1fr; }
   .field-row{ grid-template-columns: 1fr; }
-  .nav{ justify-content: flex-start; }
   .header-inner{ align-items: flex-start; flex-direction: column; }
+
+  /* Make the nav easier to tap; keep the sign-up CTA prominent */
+  .nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .nav a{
+    background: rgba(0,0,0,0.03);
+    color: var(--ink);
+    padding: 12px 12px;
+  }
+  .nav a.btn{
+    grid-column: 1 / -1;
+    justify-self: stretch;
+  }
+
   .callout{ flex-direction: column; align-items: flex-start; }
+}
+
+/* Form focus */
+input:focus-visible, select:focus-visible, textarea:focus-visible{
+  outline: 3px solid rgba(13,13,13,0.25);
+  outline-offset: 2px;
+  border-color: #0d0d0d;
+}
+
+/* Sticky mobile CTA (subtle) */
+.sticky-cta{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  background: rgba(246,246,246,0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+  transform: translateY(110%);
+  transition: transform 180ms ease;
+}
+.sticky-cta.show{ transform: translateY(0); }
+.sticky-cta-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+}
+.sticky-cta-text{ min-width: 0; }
+.sticky-cta-title{ font-weight: 750; line-height: 1.15; }
+.sticky-cta-sub{ color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+@media (min-width: 721px){
+  .sticky-cta{ display: none; }
 }
