@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get a Cash Offer for Your Tesla in the UK | OnlyUsedTesla UK</title>
+  <meta name="description" content="Sell to a dealer fast and get a cash offer for your Tesla in the UK. Enter your registration and mileage, confirm the car, and send your lead to selected UK dealers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="cash-offer-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="OnlyUsedTesla UK home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <span class="brand-title">OnlyUsedTesla UK</span>
+          <span class="brand-sub">Fast Tesla dealer cash offers • UK</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#dealer-signup">Dealer sign up</a>
+        <a class="button button-dark button-sm" href="#lookup">Start cash offer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section hero-cash-offer">
+      <div class="container hero-grid hero-grid-cash">
+        <div>
+          <div class="eyebrow">UK Tesla owner flow</div>
+          <h1>Sell to a dealer fast and get a cash offer for your Tesla in the UK.</h1>
+          <p class="lead">
+            Enter your UK registration and mileage. We show the Tesla we found, collect your mobile and email,
+            and pass the lead to selected UK dealers who may make an offer.
+          </p>
+
+          <div class="progress-list">
+            <div class="progress-item"><span>1</span> Registration + mileage</div>
+            <div class="progress-item"><span>2</span> Confirm your Tesla</div>
+            <div class="progress-item"><span>3</span> Leave your contact details</div>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-pill">Tesla-only focus</div>
+            <div class="trust-pill">UK dealer partners</div>
+            <div class="trust-pill">No obligation to accept</div>
+          </div>
+        </div>
+
+        <aside id="lookup" class="card lookup-card">
+          <h2>Start your cash-offer request</h2>
+          <p class="muted">Use a UK number plate and your current mileage.</p>
+
+          <form id="lookupForm" class="form form-tight" novalidate>
+            <div class="field">
+              <label for="reg">Vehicle registration</label>
+              <input id="reg" name="registration" type="text" inputmode="text" autocomplete="off" placeholder="e.g. LA17 XPM" maxlength="10" required />
+            </div>
+
+            <div class="field">
+              <label for="mileage">Current mileage</label>
+              <input id="mileage" name="mileage" type="number" inputmode="numeric" min="0" step="1" placeholder="e.g. 68093" required />
+            </div>
+
+            <button class="button button-dark button-block" type="submit">Find my Tesla</button>
+            <p class="small muted">Demo plate for preview: LA17 XPM</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card feature-card">
+            <div class="step-number">01</div>
+            <h3>Simple</h3>
+            <p>Ask for the essentials first. Number plate and mileage are enough to start the flow.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="step-number">02</div>
+            <h3>Fast</h3>
+            <p>Once the Tesla is confirmed, the customer leaves their contact details in the same flow.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="step-number">03</div>
+            <h3>Dealer-ready</h3>
+            <p>Hidden fields carry the reg, mileage, and detected vehicle summary into your form endpoint.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="vehicleResult" class="section is-hidden" aria-live="polite">
+      <div class="container grid grid-2 aligned-grid">
+        <div class="card vehicle-card">
+          <p class="eyebrow eyebrow-tight">We’ve found your car</p>
+          <div class="vehicle-brand" id="vehicleBrand">Tesla</div>
+          <h2 id="vehicleTitle">Tesla Model X</h2>
+          <p id="vehicleSubtitle" class="muted big-copy">90D (Dual Motor) SUV 5dr Electric Auto 4WDE (417 bhp)</p>
+
+          <div class="plate-row">
+            <div class="uk-plate" id="plateDisplay">LA17 XPM</div>
+            <div class="mileage-box"><span id="mileageDisplay">68,093</span> miles</div>
+          </div>
+
+          <button id="editLookup" class="text-link" type="button">Edit registration / mileage</button>
+        </div>
+
+        <div class="card">
+          <h3>Vehicle details</h3>
+          <dl class="details-list">
+            <div><dt>Fuel type</dt><dd id="detailFuel">Electric</dd></div>
+            <div><dt>Body type</dt><dd id="detailBody">SUV</dd></div>
+            <div><dt>Colour</dt><dd id="detailColour">Silver</dd></div>
+            <div><dt>Transmission</dt><dd id="detailTransmission">Automatic</dd></div>
+            <div><dt>Date of first registration</dt><dd id="detailRegistered">23 August 2017</dd></div>
+            <div><dt>Next MOT due</dt><dd id="detailMot">07 March 2027</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactSection" class="section is-hidden">
+      <div class="container grid grid-2 aligned-grid">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2>Where should we send your cash offer?</h2>
+          <p class="muted big-copy">
+            Keep this light. Ask for mobile, email, and postcode so you can route the enquiry to the right UK dealer partners.
+          </p>
+          <div class="callout card">
+            <h3>Recommended lead flow</h3>
+            <ol class="ordered-list">
+              <li>Visitor submits confirmed Tesla details</li>
+              <li>Your form endpoint receives reg, mileage, and contact data</li>
+              <li>You route the lead to selected UK dealers</li>
+              <li>Dealers reply with a cash offer if interested</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Set action to your endpoint or replace with your embedded form -->
+          <form id="cashOfferForm" class="form" method="post" action="">
+            <input id="hiddenReg" name="vehicle_registration" type="hidden" />
+            <input id="hiddenMileage" name="vehicle_mileage" type="hidden" />
+            <input id="hiddenVehicle" name="vehicle_summary" type="hidden" />
+            <input name="lead_source" type="hidden" value="onlyusedtesla-uk-cash-offer" />
+
+            <div class="field-row">
+              <div class="field">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="full_name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="postcode">Postcode</label>
+                <input id="postcode" name="postcode" type="text" autocomplete="postal-code" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile</label>
+                <input id="mobile" name="mobile" type="tel" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="timeline">When are you looking to sell?</label>
+                <select id="timeline" name="timeline">
+                  <option value="ASAP">ASAP</option>
+                  <option value="Within 7 days">Within 7 days</option>
+                  <option value="Within 30 days">Within 30 days</option>
+                  <option value="Just comparing offers">Just comparing offers</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="finance">Outstanding finance?</label>
+                <select id="finance" name="outstanding_finance">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="notes">Anything the dealer should know? (optional)</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Condition, wheels, service history, charger, paintwork, or anything else important."></textarea>
+            </div>
+
+            <label class="consent-row">
+              <input id="consent" name="consent_to_share" type="checkbox" value="yes" required />
+              <span>I agree that OnlyUsedTesla can share my details with selected UK dealer partners so they can contact me about a Tesla cash offer.</span>
+            </label>
+
+            <button class="button button-dark button-block" type="submit">Send to UK dealers</button>
+            <p class="small muted">No obligation. Dealers may still need to verify condition, mileage, ownership, or finance details before making an offer.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="successSection" class="section is-hidden">
+      <div class="container narrow">
+        <div class="card success-card">
+          <p class="eyebrow">Lead captured</p>
+          <h2>Thanks — this Tesla enquiry is ready to route.</h2>
+          <p class="big-copy muted">
+            In demo mode, the form is not connected yet. Once you add your form endpoint, this page will send the lead to your CRM,
+            inbox, or dealer-routing workflow.
+          </p>
+          <div class="hero-actions hero-actions-center">
+            <a class="button button-dark" href="#lookup">Start another lookup</a>
+            <a class="button button-light" href="index.html">Back to UK home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why this flow works</p>
+          <h2>The fundamentals do not change.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card feature-card">
+            <h3>Start with the car</h3>
+            <p>Registration + mileage keeps friction low and makes the lead feel relevant from the first screen.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Confirm before asking more</h3>
+            <p>Showing the Tesla back to the user makes the handoff to the contact form feel natural.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Capture dealer-ready contact details</h3>
+            <p>Mobile and email are the key fields for cash-offer follow-up. Postcode helps with routing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">OnlyUsedTesla UK</div>
+        <div class="muted">Independent • Family-owned • Tesla-only</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#lookup">Start cash offer</a>
+        <a href="index.html#dealer-signup">Dealer sign up</a>
+      </div>
+    </div>
+  </footer>
+
+  <a id="stickyCta" class="sticky-cta" href="#lookup">Start cash offer</a>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
